@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EntryTittleStyle">
+        <item name="android:layout_width">317dp</item>
+        <item name="android:layout_height">96dp</item>
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:layout_marginBottom">256dp</item>
+        <item name="android:fontFamily">@font/acme</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">#2C2B47</item>
+        <item name="android:textSize">39sp</item>
+    </style>
+
+    <style name="HomeTittleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/acme</item>
+        <item name="android:textColor">#B9B8C6</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+</resources>
