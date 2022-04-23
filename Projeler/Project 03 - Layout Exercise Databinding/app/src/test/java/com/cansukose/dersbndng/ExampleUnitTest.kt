@@ -1,4 +1,4 @@
-package com.example.dersbndng
+package com.cansukose.dersbndng
 
 import org.junit.Test
 

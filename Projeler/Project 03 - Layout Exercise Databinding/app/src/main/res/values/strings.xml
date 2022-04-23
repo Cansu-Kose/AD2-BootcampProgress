@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">dersbndng</string>
+    <string name="app_name">ders2</string>
+    <string name="textview">TextView</string>
+    <string name="startnow">StartNow</string>
 </resources>

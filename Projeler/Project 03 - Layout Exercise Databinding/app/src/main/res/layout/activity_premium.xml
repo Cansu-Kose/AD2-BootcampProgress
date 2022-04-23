@@ -1,6 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="209dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_premium" />
+
+    <TextView
+        android:id="@+id/getunlimited"
+        android:layout_width="208dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="292dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Get unlimited access!"
+        android:textColor="#2C2B47"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/rectan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_rectangle2" />
+
+    <ImageView
+        android:id="@+id/rectan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/rectan1"
+        app:srcCompat="@drawable/ic_rectangle2" />
+
+    <Button
+        android:id="@+id/gopremium"
+        android:layout_width="191dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#2C2B47"
+        android:fontFamily="@font/acme"
+        android:text="Go Premium"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="54dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="-9dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectan1"
+        app:layout_constraintEnd_toEndOf="@+id/rectan1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_rectanglemonth" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/acme"
+        android:text="$11.99 per month"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectan1"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/rectan1"
+        app:layout_constraintTop_toTopOf="@+id/rectan1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="101dp"
+        android:fontFamily="@font/acme"
+        android:text="$143.99 per year"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectan1"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/rectan1"
+        app:layout_constraintTop_toTopOf="@+id/rectan1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="51dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/acme"
+        android:text="$4.99"
+        android:textColor="#2C2B47"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectan2"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="@+id/rectan2"
+        app:layout_constraintTop_toTopOf="@+id/rectan2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="84dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/acme"
+        android:text="$4.99 per month"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectan2"
+        app:layout_constraintStart_toStartOf="@+id/rectan2"
+        app:layout_constraintTop_toTopOf="@+id/rectan2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="77dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="101dp"
+        android:fontFamily="@font/acme"
+        android:text="$59.99 per year"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectan2"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/rectan2"
+        app:layout_constraintTop_toTopOf="@+id/rectan2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="57dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/acme"
+        android:text="$11.99"
+        android:textColor="#2C2B47"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/rectan1"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="@+id/rectan1"
+        app:layout_constraintTop_toTopOf="@+id/rectan1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="-9dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:srcCompat="@drawable/ic_rectangleyear" />
+
+    <TextView
+        android:id="@+id/monthlytext"
+        android:layout_width="34dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-9dp"
+        android:fontFamily="@font/acme"
+        android:text="Monthly"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectan1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/Yearlytext"
+        android:layout_width="26dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-9dp"
+        android:fontFamily="@font/acme"
+        android:text="Yearly"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectan2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/imageView9" />
+</androidx.constraintlayout.widget.ConstraintLayout></layout>
