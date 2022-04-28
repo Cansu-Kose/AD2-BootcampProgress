@@ -2,6 +2,8 @@
 
 - [Araştırma Projesi 1 - Lateinit](#1)
 - [Araştırma Projesi 2 - Tools Namespace](#2)
+- [Araştırma Projesi 3 - Font family XML](#3)
+- [Araştırma Projesi 4 - Property Animation](#4)
 
 
 ### <a name="1"></a> Araştırma Projesi 1
@@ -66,3 +68,40 @@ class MainActivity : AppCompatActivity() {
     android:layout_height="match_parent"
     tools:itemCount="3"/>
  ```   
+
+## <a name="5"></a> Araştırma Projesi 3
+
+- Font family dosyası nasıl oluşturulup kullanıyoruz?
+- Neden belirttiğiniz şekilde kullanımı tercih ediyoruz?
+
+### <a name="6"></a> Cevap 3
+- Fontları kaynak olarak eklemek için Android Studio'da res klasörüne sağ tıklayın ve New > Android resource directory dizinine gidin.Resource type ı font olarak girin.Resource name i font olarak girin ve ok tuşuna tıklayın.Sonra oluşturduğunuz font klasörüne sağ tıklayın ve New > Font resource file dizisine gidin.Dosya adını girip ok tuşuna tıklayın.Her yazı tipi dosyasının, stilini ve ağırlık özniteliğini <font> öğesi içine alın. Aşağıdaki XML, yazı tipi kaynağı XML'sine yazı tipiyle ilgili niteliklerin eklenmesini gösterir.
+```kotlin
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/lobster_regular" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/lobster_italic" />
+</font-family>
+```
+Textview e bu fontu eklemek isterseniz Layout XML dosyasında, erişmek istediğiniz font dosyasına fontFamily özniteliğini ayarlayın.
+```kotlin 
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"/>
+```
+- Bu şekilde kullanımın tercih edilmesinin nedeni Android'de, bir XML kaynağı olarak yeni bir yazı tipi ailesi oluşturulduğunda her bir stile ve ağırlığa ayrı kaynaklar olarak başvurmak yerine tek bir birim olarak erişebilirsiniz. Bunu yaparak sistem, kullanmaya çalıştığınız metin stiline göre doğru yazı tipini seçebilir.
+
+## <a name="7"></a> Araştırma Projesi 4
+
+- Property Animation ile ilgili olarak objectAnimator ile animator arasındaki farkı kısaca açıklayınız
+    
+### <a name="8"></a> Cevap 4
+- Property Animation arka plan rengi veya alfa değeri gibi hedef nesnenin özelliklerini belirli bir süre boyunca değiştiren, XML'de tanımlanan bir animasyondur ve objectAnimator için kaynak işaretçisi(resources point)dir.
+- ValueAnimator'ın bu alt sınıfı olan objectAnimator, hedef nesnelerde özelliklerin canlandırılması için destek sağlar. Bu sınıfın yapıcıları, canlandırılacak olan hedef nesnenin yanı sıra canlandırılacak özelliğin adını tanımlamak için parametreler alır. Uygun set/get işlevleri daha sonra dahili olarak belirlenir ve animasyon, özelliği canlandırmak için gerektiğinde bu işlevleri çağırır. 
