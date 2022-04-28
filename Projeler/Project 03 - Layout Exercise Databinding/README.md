@@ -10,5 +10,9 @@
   <img width="32%" src="https://github.com/Cansu-Kose/AD2-BootcampProgress/blob/main/Projeler/Project%2001%20-%20Layout%20Exercise%20Project/image/resim3.png" alt="Sublime's custom image"/>
 </p>
 
+<p align="center"  width="70%">
+  <img width="32%" src="https://github.com/Cansu-Kose/AD2-BootcampProgress/blob/main/Projeler/Project%2001%20-%20Layout%20Exercise%20Project/image/anim1.giff" alt="Sublime's custom image"/>
+</p>
+
 
 
